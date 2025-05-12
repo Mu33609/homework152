@@ -1,191 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework15</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <div id="loading">
-      <div class="loader">
-        <div class="justify-content-center jimu-primary-loading"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework15</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+  
+ <header>
+  <div class="logo">
+    <img src="./images/logo1.svg" alt="Logo">
+    <p>Mohid</p>
+  </div>
+
+  <nav>
+    <div class="hamburger" id="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+
+    <ul id="nav-list">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#brands">Brands ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#yu">Apple</a></li>
+          <li><a href="#">Pokko</a></li>
+          <li><a href="#">Honor</a></li>
+          <li><a href="#">Samsung</a></li>
+          <li><a href="#">Teslafon</a></li>
+        </ul>
+      </li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#hi">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="icons">
+    <img src="./images/Search.svg" alt="Search" class="icon">
+    <img src="./images/Person.svg" alt="User" class="icon">
+    <img src="./images/Shopping Cart.svg" alt="Cart" class="icon">
+    <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+  </div>
+</header>
+
+  <div class="hero-section" id="home">
+    <div class="birnarsa">
+      <h2>Discover <br> Most Suitable <br> Watches</h2>
+      <p>
+        Find the best, reliable, and cheap smart watches here. We focus on product quality.
+        Here you can find smart watches of almost all brands. So why you are waiting? Just order now!
+      </p>
+      <div class="search-box">
+        <input type="text" placeholder="Find the best brands" />
+        <button>Search</button>
       </div>
     </div>
-    <header style="background-color: black">
-      <div class="container">
-        <div class="menu-flex">
-          <div class="logo">
-            <img src="./images/logo1.svg" alt="" />Mohid
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li class="dropdown">
-                <a href="#">Brands ▾</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Oppo</li>
-                  <li><a href="#">Xiaomi</a></li>
-                  <li><a href="#">Redmi</a></li>
-                  <li><a href="#">Samsung</a></li>
-                  <li><a href="#">Aplle</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Recent Products</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </nav>
-
-          <div class="icons">
-            <img src="./images/Search.svg" alt="" />
-            <img src="./images/Person.svg" alt="" />
-            <img src="./images/Shopping Cart.svg" alt="" />
-            <!-- From Uiverse.io by alexruix --> 
-<div class="loader">
-  <div class="cell d-0"></div>
-  <div class="cell d-1"></div>
-  <div class="cell d-2"></div>
-
-  <div class="cell d-1"></div>
-  <div class="cell d-2"></div>
-  
-  
-  <div class="cell d-2"></div>
-  <div class="cell d-3"></div>
-  
-  
-  <div class="cell d-3"></div>
-  <div class="cell d-4"></div>
-  
-  
-</div>
-          </div>
-        </div>
+    <div class="hero-image">
+      <img src="./images/hour.svg" alt="Smart Watch" />
+    </div>
+  </div>
+<div class="box" id="brands">
+  <div class="card">
+    <div class="ortaga">
+      <div class="imgd">
+        <img src="./images/6426000_sd-removebg-preview 1.svg" alt="" />
       </div>
-    </header>
+      <div class="poor">
+        <h5 class="sui">Apple</h5>
+        <p class="box-p">
+          Apple is one of the <br />
+          most famous smart <br />
+          watches providing <br />
+          company.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ortaga">
+      <div class="imgd">
+        <img src="./images/xiaomi_redmi_watch_2_lite_azul_01_l-removebg-preview 1.svg" alt="" />
+      </div>
+      <div class="yozuv">
+        <h5 class="sui">Xiaomi</h5>
+        <p class="box-p">
+          Xiaomi smart watches <br />
+          are produced by MI <br />
+          company.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ortaga">
+      <div class="imgd">
+        <img src="./images/6426000_sd-removebg-preview 1.svg" alt="" />
+      </div>
+      <div class="yozuv">
+        <h5 class="sui">FitBit</h5>
+        <p class="box-p">
+          FitBit smart watches <br />
+          are best for there <br />
+          health and fitness <br />
+          features.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="olma">
+    <h2>Find your favourite smart watch.</h2>
+  </div>
 
-    <main class="hero">
-      <div class="container">
-        <div class="hero-text">
-          <div class="class">
-            <h1>Discover <br /><span>Most Suitable</span> <br />Watches</h1>
-            <p>
-              Find the best, reliable, and cheap smart watches here. <br />
-              We focus on product quality. Here you can find smart <br />
-              watches of almost all brands. So why you are waiting? <br />
-              Just order now!
-            </p>
-            <div class="search-box">
-              <input type="text" placeholder=" Find the best brands" />
-              <button>Search</button>
+  <div class="anor">
+    <h2>Our Latest Products</h2>
+  </div>
+
+  <div class="container" id="products">
+    <div class="product">
+      <img src="./images/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO-removebg-preview (1) 1.svg" alt="Apple Smart I" class="image">
+
+      <h3 class="name">Apple Smart I</h3>
+      <div class="yulduz"><img src="./images/Frame 5.svg" alt=""></div>
+      <div class="price">
+        <span class="yanginarxakala">$300.00</span>
+        <span class="eskinarxakala">$255.00</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="./images/soat1.svg" alt="Apple Smart II" class="image">
+
+      <h3 class="name">Apple Smart II</h3>
+      <div class="yulduz"><img src="./images/Frame 5.svg" alt=""></div>
+      <div class="price">
+        <span class="yanginarxakala">$300.00</span>
+        <span class="eskinarxakala">$255.00</span>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="./images/soat2.svg" alt="Apple Smart III" class="image">
+
+      <h3 class="name">Apple Smart III</h3>
+      <div class="yulduz"><img src="./images/Frame 5.svg" alt=""></div>
+      <div class="price">
+        <span class="yanginarxakala">$300.00</span>
+        <span class="eskinarxakala">$255.00</span>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container">
+    <div class="product olma">
+      <img src="./images/soat3.svg" alt="Apple Smart IV" class="image">
+      <h3 class="name">Apple Smart IV</h3>
+      <img src="./images/Frame 5.svg" alt="">
+      <div class="price">
+        <span class="yanginarxakala">$459.99</span>
+        <span class="eskinarxakala">$399.00</span>
+      </div>
+    </div>
+
+    <div class="product anor">
+      <img src="./images/soat4.svg" alt="Samsung Watch Pro" class="image">
+      <h3 class="name">Samsung Watch Pro</h3>
+      <img src="./images/Group 13 (1).svg" alt="">
+      <div class="price">
+        <span class="yanginarxakala">$300.00</span>
+        <span class="eskinarxakala">$255.00</span>
+      </div>
+    </div>
+
+    <div class="product banan">
+      <img src="./images/soat5.svg" alt="Fitbit Max 1" class="image">
+      <h3 class="name">Fitbit Max 1</h3>
+      <img src="./images/Frame 5.svg" alt="">
+      <div class="price">
+        <span class="eskinarxakala">$155.00</span>
+      </div>
+    </div>
+  </div>
+  <div class="hi"><img src="./images/View More Button.svg" alt=""></div>
+  
+  </div>
+  <button id="backToTopBtn" title="Go to top">↑</button>
+  <section class="testimonials" id="about">
+    <section class="fikrlar">
+      <div class="sahifa-kengligi">
+        <p>Here are our some of the best clients.</p>
+        <h2> What People Say About Us</h2>
+    
+        <div class="fikr-kartalari">
+
+          <div class="fikr-karta faol">
+            <img src="./images/6426000_sd-removebg-preview 1 (1).svg" alt="Hamza Faizi" class="profil-rasm">
+            <div class="fikr-matni">
+              <h4>Hamza Faizi</h4>
+<p>Don’t waste time, just order! This is the best website to puschase smart watches.</p>
+            </div>
+            <div class="baho">
+             <img src="./images/Group 13.svg" alt="">
             </div>
           </div>
-          <div class="hero-image">
-            <img
-              src="./images/hour.svg"
-              alt=""
-            />
+
+          <div class="fikr-karta">
+            <img src="./images/6426000_sd-removebg-preview 1 (2).svg" alt="Hafiz Huzaifa" class="profil-rasm">
+            <div class="fikr-matni">
+              <h4>Hafiz Huzaifa</h4>
+<p>I’ve been purchasing smart watches of Mohid for a long time. All the products are good quality.</p>
+            </div>
+            <div class="baho">
+              <img src="./images/Group 13.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="sahifalash">
+          <span class="nuqta faol"></span>
+          <span class="nuqta"></span>
+          <span class="nuqta"></span>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item"><h4>1</h4></div>
+          <div class="item"><h4>2</h4></div>
+          <div class="item"><h4>3</h4></div>
+          <div class="item"><h4>4</h4></div>
+          <div class="item"><h4>5</h4></div>
+          <div class="item"><h4>6</h4></div>
+          <div class="item"><h4>7</h4></div>
+          <div class="item"><h4>8</h4></div>
+          <div class="item"><h4>9</h4></div>
+          <div class="item"><h4>10</h4></div>
+          <div class="item"><h4>11</h4></div>
+          <div class="item"><h4>12</h4></div>
+      </div>
+      </div>
+    </section>
+    
+    <section class="yangiliklar" id="hi">
+      <div class="sahifa-kengligi">
+        <div class="yangiliklar-kontent">
+          <div class="matn-qismi">
+            <h2>Subscribe To Newsletter</h2>
+            <p>Get free guide about smart watches daily. </p>
+            <form>
+              <input type="email" placeholder="Enter Email Address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="rasim-qismi">
+            <img src="./images/6426000_sd-removebg-preview 1 (3).svg" alt="Smart Watch" class="yangiliklar-rasmi" />
           </div>
         </div>
       </div>
-    </main>
-    <div class="container">
-      <div class="umummiy">
-        <div class="div-1">
-          <div class="img-for-div">
-            <img
-              src="./images/6426000_sd-removebg-preview 1.svg"
-              alt=""
-            />
-          </div>
-          <div class="text-for-div">
-            <h4>Apple</h4>
-            <p>
-              Apple is one of the most famous smart watches providing company.
-            </p>
-          </div>
-        </div>
-        <div class="div-1">
-          <div class="img-for-div">
-            <img
-              src="./images/xiaomi_redmi_watch_2_lite_azul_01_l-removebg-preview 1.svg"
-              alt=""
-            />
-          </div>
-          <div class="text-for-div">
-            <h4>Xiaomi</h4>
-            <p>Xiaomi smart watches are produced by MI company.</p>
-          </div>
-        </div>
-        <div class="div-1">
-          <div class="img-for-div">
-            <img src="./images/6426000_sd-removebg-preview 1.svg" alt="" />
-          </div>
-          <div class="text-for-div">
-            <h4>FitBit</h4>
-            <p>
-              FitBit smart watches are best for their health and fitness
-              features.
-            </p>
-          </div>
-        </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">Copyright @ 2022 | Mohid</p>
       </div>
-    </div>
-    <h2 class="h2" style="text-align: center; margin-top: 10px">
-      Our Latest Products
-    </h2>
-    <div class="product-section">
-  <div class="boxs">
-    <div class="box-11">
-      <img src="./images/MKUQ3_VW_34FR+watch-45-alum-midnight-nc-7s_VW_34FR_WF_CO-removebg-preview (1) 1.svg" alt="Apple Watch" class="img-for" />
-      <h4>Apple Smart I</h4>
-      <p>★★★★★</p>
-      <p><del>$300.00</del> <strong>$255.00</strong></p>
-    </div>
+    </footer> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <div class="box-11">
-      <img src="./images/soat1.svg" alt="Apple Watch II" class="img-for" />
-      <h4>Apple Smart II</h4>
-      <p>★★★★★</p>
-      <p><del>$300.00</del> <strong>$255.00</strong></p>
-    </div>
-
-    <div class="box-11">
-      <img src="./images/soat2.svg" alt="Apple Watch III" class="img-for" />
-      <h4>Apple Smart III</h4>
-      <p>★★★★★</p>
-      <p><del>$300.00</del> <strong>$255.00</strong></p>
-    </div>
-
-    <div class="box-11">
-      <img src="./images/soat3.svg" alt="Apple Watch IV" class="img-for" />
-      <h4>Apple Smart IV</h4>
-      <p>★★★★★</p>
-      <p><del>$450.00</del> <strong>$399.00</strong></p>
-    </div>
-
-    <div class="box-11">
-      <img src="./images/soat4.svg" alt="Samsung Pro" class="img-for" />
-      <h4>Samsung Watch Pro</h4>
-      <p>★★★★★</p>
-      <p><del>$300.00</del> <strong>$255.00</strong></p>
-    </div>
-
-    <div class="box-11">
-      <img src="./images/soat5.svg" alt="Fitbit Max" class="img-for" />
-      <h4>Fitbit Max 1</h4>
-      <p>★★★★★</p>
-      <p><strong>$155.00</strong></p>
-    </div>
-  </div>
-
-  <div style="text-align: center; margin-top: 30px;">
-    <button class="view-more-btn">View More</button>
-  </div>
-</div>
-
-   
-    <script src="./js/main.js"></script>
-  </body>
+<script src="./js/main.js"></script>
+</body>
 </html>
